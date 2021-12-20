@@ -1,0 +1,914 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Montserrat', sans-serif;
+}
+p,span{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.font{font-family: 'Herr Von Muellerhoff', cursive;}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+/* ------Began Style Css-------- */
+
+
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url(./img/2-layers-1_mini.jpg) no-repeat center;
+    background-position: center;
+}
+
+#nav{
+    width: 100%;
+    background: #212121;
+}
+.menu{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .logo img{
+    width: 170px;
+    cursor: pointer;
+}
+
+.primary-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    line-height: 75px;
+}
+
+.primary-menu ul li{
+    padding: 0px 15px;
+    cursor: pointer;
+    position: relative;    
+}
+.primary-menu ul li a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s;
+}
+.primary-menu ul li a i{
+    transition: .3s;
+    color: #fff;
+}
+.primary-menu ul li:hover a{
+    color: #f6aa0f;
+}
+.primary-menu ul li:hover i{
+    color: #f6aa0f;
+}
+
+
+/* ------active home------ */
+.homepage{
+    color: #f6aa0f !important;
+    padding: 5px;
+    border: 2px solid #f6aa0f;
+}
+
+
+
+
+/* --------Drop Down Menu--------- */
+
+
+.primary-menu ul li ul{
+    position: absolute;
+    top: 130%;
+    left: 0;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.primary-menu ul li ul li {
+    display: block;
+    padding: 0;
+    width: 250px;
+    background: #f4f6f7;
+    line-height: 55px;
+    border-left: 4px solid #fff;
+    transition: .2s;
+    border-bottom: 1px solid rgba(95, 124, 127,.2);
+}
+.primary-menu ul li ul li a {
+    color: rgba(95, 124, 127,.9) !important;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 17px;
+    padding-left: 21px;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.primary-menu ul li:hover ul{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.primary-menu ul li ul li:hover a{
+    color: #333 !important;
+}
+.primary-menu ul li ul li:hover{
+    border-left: 4px solid #f6aa0f;
+    background: #fff;
+}
+
+
+
+/* -----Home Text------- */
+
+
+
+.home-text{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.defult-text h1 {
+    color: #f6aa0f;
+    font-size: 150px;
+    margin: 0;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+.home-text h2 {
+    color: #fff;
+    font-size: 88px;
+    font-weight: 700;
+    margin-top: -25px;
+    margin-bottom: -3px;
+}
+.home-text p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.home-text span {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    display: block;
+}
+.home-text a {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 11px;
+    font-weight: 700;
+    color: #f6aa0f;
+    border: 2px solid #f6aa0f;
+    margin: 0;
+    transition: .3s;
+}
+.home-text a:hover{
+    color: #fff;
+    background: #f6aa0f;
+}
+
+
+
+/* -------Reinterpreted-------- */
+
+
+.Reinterpreted{
+    position: relative;
+    z-index: 8;
+}
+.bg-img img{
+    margin-top: -3%;
+}
+.Reinterpreted-text{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.Reinterpreted-text .defult-text h1{
+    font-size: 115px;
+    font-weight: 300;
+    margin: 0;
+}
+.Reinterpreted-text h2{
+    font-size: 51px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.Reinterpreted-text img {
+    padding-bottom: 20px;
+}
+.Reinterpreted-text p {
+    width: 34%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.Reinterpreted-text a{
+    color: #f6aa0f;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: .3s;
+}
+.Reinterpreted-text a:hover{
+    color: #333;
+}
+
+.banner1, .banner2, .banner3, .banner4{
+    position: absolute;
+    bottom: -78%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.banner1{
+    animation: slidder1 10s linear infinite;
+}
+.banner2{
+    animation: slidder2 10s linear infinite;
+}
+.banner3{
+    animation: slidder3 10s linear infinite;
+}
+.banner4{
+    animation: slidder4 10s linear infinite;
+}
+@keyframes slidder1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slidder2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slidder3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slidder4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+
+ 
+
+
+/* -----pill tabs------- */
+
+
+
+.Discover {
+    width: 100%;
+    height: auto;
+    padding-top: 600px;
+}
+
+.discover-text{
+    text-align: center;
+}
+.discover-text h2{
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.discover-text .defult-text h1{
+    font-size: 120px;
+    font-weight: 400;
+    margin: 0;
+}
+.discover-tab ul{
+    width: 45%;
+    margin: auto;
+    padding: 30px 0px;
+}
+.discover-tab ul li{
+    margin: auto;
+}
+.discover-tab ul li a {
+    background: none !important;
+    color: #333 !important;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    display: block;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.discover-tab ul li a:hover{
+    color: #f6aa0f !important;
+}
+
+.tab-image{
+    max-width: 100%;
+}
+.tab-img{
+    padding: 0;
+}  
+.tab-img{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
+}  
+.tab-img img{
+    width: 100% ;
+    height: auto;
+    transform: scale(1);
+    transition: .4s ease-in-out;
+}  
+.innerdiv::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #d63031 , #f9ca24);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+.tab-img img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    visibility: visible;
+}
+.tab-img:hover .innerdiv::before{
+    opacity: .8;
+    visibility: visible;
+    pointer-events: none;
+}
+
+
+.inner-text{
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.tab-img:hover .inner-text{
+    opacity: 1;
+    visibility: visible;
+}
+.tab-img:hover .inner-icon .file{
+    top: 8%;
+}
+.tab-img:hover .inner-icon .camera{
+    top: 8%;
+}
+.tab-img:hover .inner-text h3{
+    bottom: 8%;
+}
+.inner-text h3{
+    position: absolute;
+    bottom: 0%;
+    left: 8%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.inner-icon span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+.inner-icon .file{
+    top: 0%;
+    left: 8%;
+    transition: .3s;
+}
+.inner-icon .camera{
+    top: 0%;
+    left: 20%;
+    transition: .3s;
+}
+
+
+
+
+/*----------- discover-menu----------- */
+
+
+
+.discover-menu{
+    width: 100%;
+    height: 100vh;
+    background: url(./img/26.jpg) no-repeat center;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.d-menu-item {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+}
+.d-menu-item .defult-text h1{
+    font-size: 110px;
+}
+.d-menu-item h2{
+    font-size:55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+.d-menu-item a{
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #f6aa0f;
+    padding: 10px 30px;
+    color: #fff;
+    transition: .3s;
+}
+.d-menu-item a:hover{
+    background: #444;
+}
+.d-menu-item img {
+	display: block;
+	margin: auto;
+    padding: 25px 0px;
+}
+
+
+
+/* ---------Ocean-Food--------- */
+
+
+
+.Ocean-Food{
+    width: 100%;
+    height: 100vh;
+    background: url(./img/29-1.jpg) no-repeat center;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+.ocean-item{
+    position: absolute;
+    top: 33%;
+    left: 23%;
+}
+.Ocean-Food .defult-text h1{
+    font-size: 105px;
+}
+.Ocean-Food-item h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+
+}
+.Ocean-Food-item p {
+    width: 70%;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.Ocean-Food-item a{
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline; 
+    color: #f6aa0f;
+    transition: .3s;
+}
+.Ocean-Food-item a:hover{
+    color: #333;
+    text-decoration: none; 
+}
+
+
+
+/* -----------Ingredients----------- */
+
+
+.Ingredients{
+    width: 100%;
+    height: 100vh;
+    background: url(./img/restaurant-parallax-scroller-image.jpg) no-repeat center;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+.Ingredients-item{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+.Ingredients-item p{
+    width: 60%;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.layer-28{
+    position: absolute;
+    top: 0;
+    left: -10%;
+}
+.layer-33{
+    position: absolute;
+    bottom: -110%;
+    right: -5%;
+    transform: rotate(20deg);
+}
+.layer-34{
+    position: absolute;
+    top: 150%;
+    right: 60%;
+}
+.layer-35{
+    position: absolute;
+    top: -5%;
+    left: -45%;
+    transform: rotate(-15deg);
+}
+.layer-36 {
+    position: absolute;
+    bottom: -130%;
+    left: -5%;
+}
+.layer-37{
+    position: absolute;
+    top: -5%;
+    left: 20%;
+}
+.layer-39{
+    position: absolute;
+    bottom: -90%;
+    right: 18%;
+}
+
+
+
+/* ---------Delicious--------- */
+
+
+
+
+.Delicious{
+    width: 100%;
+    height: 60vh;
+    background: url(./img/3-layers-1_mini_mini.jpg) no-repeat center;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+.Delicious-item{
+    position: absolute;
+    top: 33%;
+    left: 34%;
+}
+
+.Delicious-item .defult-text h1{
+    font-size: 105px;
+    margin-bottom: -15px;
+}
+.Delicious-item h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* -----testimonial---- */
+
+.testimonial {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 300px;
+}
+.testimonial-item h1 {
+    text-align: center;
+    font-size: 100px;
+    line-height: 70px;
+}
+.testimonial-item h2 {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#carouselExampleControls{
+    padding-bottom: 25px;
+}
+.carousel-item{
+    padding-top: 70px;
+}
+.carousel-item img {
+    width: 100px !important;
+    height: 100px !important;
+    margin: auto;
+    border-radius: 50%;
+}
+.carousel-caption {
+    position: static;
+}
+.carousel-caption h5 {
+    color: #f6aa0f;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .3rem !important;
+}
+.carousel-caption small {
+    color: #99a9b5;
+}
+.carousel-caption p {
+    color: #3c3950;
+    font-size: 23px;
+    width: 50%;
+    margin: auto;
+    font-weight: 300;
+    font-family: source sans pro !important;
+    padding-top: 25px;
+}
+
+.carousel-control-prev {
+    width: 45px !important;
+    height: 45px !important;
+    background: #f6aa0f !important;
+    position: absolute;
+    top: 220px;
+    left: 390px;
+}
+.carousel-control-next{
+    width: 45px !important;
+    height: 45px !important;
+    background: #f6aa0f !important;
+    position: absolute;
+    top: 220px;
+    right: 390px;
+}
+.quote-icon span {
+    display: inline-block;
+    position: absolute;
+    bottom: 23%;
+    left: 50%;
+    font-size: 70px;
+    color: #f6aa0f;
+}
+.quote-icon span i {
+    transform: rotate(15deg) !important;
+}
+
+.testi-button {
+    position: absolute;
+    bottom: 11% !important;
+    left: 45%;
+    display: inline-block;
+    margin: auto;
+}
+.testi-button .d-menu-item{
+    position: static;
+}
+.testi-button .d-menu-item a:hover{
+    text-decoration: none;
+}
+
+
+/* -------contact---- */
+
+
+.contact-section{
+    background: url(./img/35.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 200px 0px;
+}
+.contact {
+    background: #fff;
+    padding: 40px 50px;
+}
+.table {
+    margin-bottom: 0px !important;
+}
+.table h3 {
+    color: #262626;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+.table input {
+    width: 90%;
+    color: #262626;
+    border: 1px solid #dfe5e8;
+    background: #f7f7f7;
+    padding: 12px 20px;
+    display: block;
+    margin: 20px 0px;
+}
+.table a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #ffa742;
+    padding: 10px 60px;
+    color: #fff;
+    transition: .3s;
+}
+.table a:hover{
+    background: #444;
+    text-decoration: none;
+}
+.table-contact{
+    text-align: center;
+}
+.table-contact h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #262626;
+}
+.table-contact span {
+    color: #ffa742;
+    font-size: 20px;
+}
+.contact-work {
+    margin-top: 40px;
+}
+.table-contact p {
+    color: #505050;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.map span {
+    color: #505050;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    padding: 15px 0px;
+}
+
+
+/* ---footer---- */
+
+.footer {
+    position: relative;
+    background: #424242;
+    padding-top: 30px;
+    padding-bottom: 12px;
+    margin-top: -5px;
+}
+.footer-last-menu {
+    position: absolute;
+    top: 36px;
+    right: 0;
+}
+.copy-text span {
+    color: #fff;
+    font-size: 17px;
+}
+.copy-text span a {
+    color: #ffa742;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.copy-text span a:hover{
+    text-decoration: none;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+}
+.footer-menu ul li a {
+    color: #fff !important;
+    padding: 0px 9px;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+.footer-menu ul li a:hover{
+    color: #ffa742;
+    text-decoration: none;
+}
+
+.footer-icon-menu ul li{
+    display: inline-block;
+}
+.footer-icon-menu ul li span {
+    color: #fff;
+    padding: 0px 10px;
+    transition: .3s;
+}
+.footer-icon-menu ul li span:hover{
+    color: #ffa742;
+}
